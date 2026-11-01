@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#100d20">
-<title>Hoàng Kun Android | TikTok</title>
+<meta name="theme-color" content="#100817">
+<title>Hoàng Kun Android | TikTok Download</title>
 
 <!-- FONT & ICON -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +17,12 @@
    1. CẤU HÌNH GIAO DIỆN
 ======================================== */
 :root {
-    --bg: #100d20;
-    --card: rgba(255,255,255,.055);
+    --bg: #100817;
+    --card: #1c1729;
     --primary: #3ddc84;
-    --secondary: #7964ff;
+    --secondary: #7865ff;
     --text: #ffffff;
-    --muted: #aaa6bd;
+    --muted: #aaa3ba;
     --border: rgba(255,255,255,.09);
 }
 
@@ -49,8 +50,8 @@ body::before {
     inset: 0;
     z-index: -1;
     background:
-        radial-gradient(circle at 15% 10%, rgba(121,100,255,.19), transparent 35%),
-        radial-gradient(circle at 85% 40%, rgba(61,220,132,.10), transparent 35%);
+        radial-gradient(circle at 10% 10%, rgba(120,101,255,.17), transparent 35%),
+        radial-gradient(circle at 90% 50%, rgba(61,220,132,.09), transparent 35%);
 }
 
 a {
@@ -70,17 +71,16 @@ button {
     position: sticky;
     top: 0;
     z-index: 100;
-    width: 100%;
-    background: rgba(16,13,32,.85);
+    background: rgba(16,8,23,.88);
     backdrop-filter: blur(18px);
     border-bottom: 1px solid var(--border);
 }
 
 .navbar {
-    max-width: 1150px;
-    height: 75px;
+    max-width: 1100px;
+    height: 72px;
     margin: auto;
-    padding: 0 25px;
+    padding: 0 22px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -89,94 +89,68 @@ button {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 20px;
+    gap: 11px;
+    font-size: 19px;
     font-weight: 800;
 }
 
 .logo-icon {
-    width: 38px;
-    height: 38px;
+    width: 39px;
+    height: 39px;
     display: grid;
     place-items: center;
-    background: linear-gradient(135deg, #3ddc84, #159b60);
-    color: #10251a;
     border-radius: 12px;
+    background: linear-gradient(135deg, #3ddc84, #159b60);
+    color: #092719;
+    font-size: 20px;
 }
 
 .logo span {
     color: var(--primary);
 }
 
-.nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
 .nav-label {
-    color: var(--primary);
-    font-size: 12px;
-    font-weight: 800;
-    padding: 9px 14px;
+    padding: 8px 14px;
     border-radius: 30px;
     background: rgba(61,220,132,.1);
-}
-
-.share-btn {
-    border: 1px solid var(--border);
-    background: var(--card);
-    color: white;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    transition: .2s;
-}
-
-.share-btn:hover {
-    background: var(--primary);
-    color: #10251a;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
 }
 
 /* ========================================
    3. BỐ CỤC CHÍNH
 ======================================== */
 .container {
-    width: min(100%, 950px);
+    width: min(100%, 900px);
     margin: auto;
-    padding: 35px 22px 70px;
+    padding: 35px 20px 60px;
 }
 
 /* ========================================
    4. THÔNG TIN ỨNG DỤNG
 ======================================== */
 .app-card {
-    position: relative;
-    overflow: hidden;
-    padding: 32px;
-    border-radius: 24px;
+    padding: 30px;
+    border-radius: 23px;
     border: 1px solid var(--border);
-    background: linear-gradient(
-        135deg,
-        rgba(121,100,255,.12),
-        rgba(255,255,255,.035)
-    );
+    background: linear-gradient(135deg, rgba(120,101,255,.12), rgba(255,255,255,.035));
     box-shadow: 0 20px 60px rgba(0,0,0,.2);
 }
 
 .app-main {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 23px;
 }
 
 .app-icon {
-    width: 115px;
-    height: 115px;
+    width: 110px;
+    height: 110px;
     object-fit: cover;
-    border-radius: 27px;
+    border-radius: 25px;
     background: #000;
-    box-shadow: 0 12px 35px rgba(0,0,0,.35);
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
 }
 
 .app-content {
@@ -184,16 +158,14 @@ button {
 }
 
 .app-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
+    display: inline-block;
     padding: 7px 13px;
+    margin-bottom: 12px;
     border-radius: 30px;
     background: rgba(61,220,132,.1);
     color: var(--primary);
     font-size: 11px;
     font-weight: 800;
-    margin-bottom: 12px;
 }
 
 .app-content h1 {
@@ -203,15 +175,15 @@ button {
 }
 
 .app-content p {
+    color: var(--muted);
     font-size: 13px;
     line-height: 1.8;
-    color: var(--muted);
 }
 
 /* ========================================
    5. THÔNG TIN PHIÊN BẢN
 ======================================== */
-.app-info {
+.info-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 12px;
@@ -220,14 +192,9 @@ button {
 
 .info-item {
     padding: 15px;
-    border-radius: 14px;
+    border-radius: 13px;
     background: rgba(255,255,255,.045);
     border: 1px solid var(--border);
-}
-
-.info-item i {
-    color: var(--primary);
-    margin-right: 6px;
 }
 
 .info-item small {
@@ -239,13 +206,12 @@ button {
 
 .info-item strong {
     font-size: 13px;
-    font-weight: 800;
 }
 
 /* ========================================
-   6. NÚT TẢI ỨNG DỤNG
+   6. KHU VỰC TẢI ỨNG DỤNG
 ======================================== */
-.download-section {
+.download-card {
     margin-top: 22px;
     padding: 30px;
     text-align: center;
@@ -271,16 +237,16 @@ button {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    min-width: 230px;
+    min-width: 235px;
     margin-top: 22px;
     padding: 16px 25px;
     border-radius: 13px;
     background: linear-gradient(100deg, #3ddc84, #20b96d);
-    color: #092518;
+    color: #092719;
     font-size: 14px;
     font-weight: 800;
     transition: .25s;
-    box-shadow: 0 8px 25px rgba(61,220,132,.17);
+    box-shadow: 0 8px 25px rgba(61,220,132,.18);
 }
 
 .download-btn:hover {
@@ -299,41 +265,9 @@ button {
 }
 
 /* ========================================
-   7. ẢNH GIỚI THIỆU
+   7. HƯỚNG DẪN CÀI ĐẶT ANDROID
 ======================================== */
-.gallery-section {
-    margin-top: 22px;
-    padding: 28px;
-    border-radius: 22px;
-    background: var(--card);
-    border: 1px solid var(--border);
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 14px;
-    margin-top: 20px;
-}
-
-.gallery img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 9 / 16;
-    object-fit: cover;
-    border-radius: 13px;
-    border: 1px solid var(--border);
-    transition: .3s;
-}
-
-.gallery img:hover {
-    transform: translateY(-5px);
-}
-
-/* ========================================
-   8. HƯỚNG DẪN CÀI ĐẶT
-======================================== */
-.guide-section {
+.guide-card {
     margin-top: 22px;
     padding: 28px;
     border-radius: 22px;
@@ -343,55 +277,69 @@ button {
 
 .guide-list {
     display: grid;
-    gap: 20px;
-    margin-top: 22px;
+    gap: 22px;
+    margin-top: 25px;
 }
 
 .guide-item {
     display: flex;
+    gap: 16px;
     align-items: flex-start;
-    gap: 14px;
 }
 
-.guide-number {
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
+.guide-icon {
+    width: 43px;
+    height: 43px;
+    min-width: 43px;
     display: grid;
     place-items: center;
-    border-radius: 50%;
-    background: rgba(61,220,132,.13);
+    border-radius: 13px;
+    background: rgba(61,220,132,.12);
     color: var(--primary);
-    font-size: 13px;
-    font-weight: 800;
+    font-size: 17px;
 }
 
-.guide-item h3 {
-    font-size: 13px;
-    margin-bottom: 6px;
+.guide-content {
+    flex: 1;
 }
 
-.guide-item p {
+.guide-content h3 {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.guide-content p {
     color: var(--muted);
     font-size: 12px;
     line-height: 1.8;
 }
 
+.guide-label {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 5px 9px;
+    border-radius: 7px;
+    background: rgba(120,101,255,.12);
+    color: #a99cff;
+    font-size: 10px;
+    font-weight: 700;
+}
+
 /* ========================================
-   9. LƯU Ý
+   8. LƯU Ý CÀI ĐẶT
 ======================================== */
 .notice {
     margin-top: 22px;
     padding: 20px;
     border-radius: 16px;
+    background: rgba(61,220,132,.055);
     border: 1px solid rgba(61,220,132,.2);
-    background: rgba(61,220,132,.06);
 }
 
 .notice h3 {
     color: var(--primary);
     font-size: 13px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .notice p {
@@ -401,7 +349,7 @@ button {
 }
 
 /* ========================================
-   10. CHÂN TRANG
+   9. CHÂN TRANG
 ======================================== */
 .footer {
     margin-top: 35px;
@@ -418,7 +366,7 @@ button {
 }
 
 /* ========================================
-   11. HIỆU ỨNG THÔNG BÁO
+   10. THÔNG BÁO
 ======================================== */
 .toast {
     position: fixed;
@@ -427,18 +375,17 @@ button {
     transform: translate(-50%, -15px);
     padding: 13px 20px;
     border-radius: 12px;
-    background: #242039;
+    background: #29223a;
     border: 1px solid var(--border);
     color: white;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
     opacity: 0;
     visibility: hidden;
     transition: .25s;
     z-index: 999;
-    text-align: center;
-    width: max-content;
     max-width: 90%;
+    text-align: center;
 }
 
 .toast.show {
@@ -448,16 +395,16 @@ button {
 }
 
 /* ========================================
-   12. RESPONSIVE MOBILE
+   11. RESPONSIVE MOBILE
 ======================================== */
-@media (max-width: 650px) {
+@media (max-width: 600px) {
     .navbar {
         height: 65px;
-        padding: 0 16px;
+        padding: 0 15px;
     }
 
     .logo {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .container {
@@ -465,7 +412,7 @@ button {
     }
 
     .app-card {
-        padding: 22px 18px;
+        padding: 22px 17px;
     }
 
     .app-main {
@@ -475,21 +422,20 @@ button {
     }
 
     .app-icon {
-        width: 105px;
-        height: 105px;
+        width: 100px;
+        height: 100px;
     }
 
     .app-content h1 {
         font-size: 25px;
     }
 
-    .app-info {
+    .info-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .download-section,
-    .gallery-section,
-    .guide-section {
+    .download-card,
+    .guide-card {
         padding: 23px 17px;
     }
 
@@ -498,23 +444,15 @@ button {
         min-width: unset;
     }
 
-    .gallery {
-        gap: 8px;
-    }
-
-    .gallery img {
-        border-radius: 9px;
+    .guide-item {
+        gap: 12px;
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 350px) {
     .nav-label {
-        font-size: 10px;
+        font-size: 9px;
         padding: 7px 9px;
-    }
-
-    .app-info {
-        gap: 8px;
     }
 
     .info-item {
@@ -527,7 +465,7 @@ button {
 <body>
 
 <!-- ========================================
-     13. THANH ĐIỀU HƯỚNG
+     12. HEADER
 ======================================== -->
 <header class="header">
     <nav class="navbar">
@@ -539,25 +477,18 @@ button {
             HOÀNG KUN <span>ANDROID</span>
         </div>
 
-        <div class="nav-actions">
-            <div class="nav-label">
-                <i class="fab fa-android"></i> ANDROID
-            </div>
-
-            <button class="share-btn" onclick="shareWebsite()" title="Chia sẻ">
-                <i class="fas fa-share-nodes"></i>
-            </button>
+        <div class="nav-label">
+            <i class="fab fa-android"></i> ANDROID
         </div>
 
     </nav>
 </header>
 
-<!-- ========================================
-     14. NỘI DUNG CHÍNH
-======================================== -->
 <main class="container">
 
-    <!-- THẺ ỨNG DỤNG -->
+    <!-- ========================================
+         13. THÔNG TIN ỨNG DỤNG
+    ======================================== -->
     <section class="app-card">
 
         <div class="app-main">
@@ -569,6 +500,7 @@ button {
             >
 
             <div class="app-content">
+
                 <span class="app-tag">
                     <i class="fab fa-android"></i>
                     ANDROID APPLICATION
@@ -577,52 +509,66 @@ button {
                 <h1>TikTok Android</h1>
 
                 <p>
-                    Tải và trải nghiệm TikTok phiên bản Android
-                    trực tiếp từ Hoàng Kun.
+                    Trải nghiệm TikTok phiên bản Android
+                    cùng Hoàng Kun.
                 </p>
+
             </div>
 
         </div>
 
         <!-- THÔNG TIN PHIÊN BẢN -->
-        <div class="app-info">
+        <div class="info-grid">
 
             <div class="info-item">
-                <small><i class="fas fa-code-branch"></i> Phiên bản</small>
+                <small>Phiên bản</small>
                 <strong>47.4.3</strong>
             </div>
 
             <div class="info-item">
-                <small><i class="fas fa-mobile-screen"></i> Hệ điều hành</small>
+                <small>Hệ điều hành</small>
                 <strong>Android</strong>
             </div>
 
             <div class="info-item">
-                <small><i class="fas fa-file"></i> Định dạng</small>
+                <small>Định dạng</small>
                 <strong>APK</strong>
+            </div>
+
+            <div class="info-item">
+                <small>Phiên bản mod</small>
+                <strong>TikTok You-5.0</strong>
+            </div>
+
+            <div class="info-item">
+                <small>Nhà phân phối</small>
+                <strong>Hoàng Kun</strong>
+            </div>
+
+            <div class="info-item">
+                <small>Trạng thái</small>
+                <strong style="color:var(--primary)">Có link tải</strong>
             </div>
 
         </div>
 
     </section>
 
-    <!-- KHU VỰC TẢI -->
-    <section class="download-section">
+    <!-- ========================================
+         14. NÚT TẢI APK
+    ======================================== -->
+    <section class="download-card">
 
         <h2 class="section-title">Tải xuống TikTok</h2>
 
         <p class="section-desc">
-            Phiên bản TikTok You-5.0 dành cho thiết bị Android.
-            <br>
-            Nhấn nút bên dưới để tải file cài đặt.
+            Nhấn nút bên dưới để tải file cài đặt dành cho Android.
         </p>
 
         <a
             href="https://storeipa.com/file/TikTok_You-5.0_47.4.3_.apk"
             class="download-btn"
             id="downloadBtn"
-            target="_blank"
-            rel="noopener noreferrer"
         >
             <i class="fas fa-download"></i>
             TẢI APK NGAY
@@ -634,90 +580,140 @@ button {
 
     </section>
 
-    <!-- ẢNH GIỚI THIỆU -->
-    <section class="gallery-section">
+    <!-- ========================================
+         15. HƯỚNG DẪN CÀI ĐẶT ANDROID
+    ======================================== -->
+    <section class="guide-card">
 
-        <h2 class="section-title">Hình ảnh ứng dụng</h2>
-
-        <p class="section-desc">
-            Một số hình ảnh giới thiệu TikTok.
-        </p>
-
-        <div class="gallery">
-
-            <img src="https://storeipa.com/QgNbxM/hd1.png" alt="TikTok ảnh 1">
-
-            <img src="https://storeipa.com/QgNbxM/hd2.png" alt="TikTok ảnh 2">
-
-            <img src="https://storeipa.com/QgNbxM/hd3.png" alt="TikTok ảnh 3">
-
-        </div>
-
-    </section>
-
-    <!-- HƯỚNG DẪN CÀI ĐẶT -->
-    <section class="guide-section">
-
-        <h2 class="section-title">Hướng dẫn cài đặt</h2>
+        <h2 class="section-title">Hướng dẫn cài đặt Android</h2>
 
         <p class="section-desc">
-            Thực hiện các bước sau để cài đặt ứng dụng trên Android.
+            Làm theo các bước dưới đây để cài đặt ứng dụng.
         </p>
 
         <div class="guide-list">
 
+            <!-- BƯỚC 1 -->
             <div class="guide-item">
-                <span class="guide-number">1</span>
 
-                <div>
-                    <h3>Tải file APK</h3>
-                    <p>Nhấn nút Tải APK ngay để tải file cài đặt về điện thoại.</p>
+                <div class="guide-icon">
+                    <i class="fas fa-download"></i>
                 </div>
+
+                <div class="guide-content">
+                    <h3>Bước 1: Tải file APK</h3>
+
+                    <p>
+                        Nhấn nút TẢI APK NGAY phía trên.
+                        Chờ trình duyệt tải file về điện thoại.
+                    </p>
+
+                    <span class="guide-label">TẢI XUỐNG</span>
+                </div>
+
             </div>
 
+            <!-- BƯỚC 2 -->
             <div class="guide-item">
-                <span class="guide-number">2</span>
 
-                <div>
-                    <h3>Mở file vừa tải</h3>
-                    <p>Truy cập thư mục Download và mở file APK vừa tải xuống.</p>
+                <div class="guide-icon">
+                    <i class="fas fa-folder-open"></i>
                 </div>
+
+                <div class="guide-content">
+                    <h3>Bước 2: Mở thư mục Download</h3>
+
+                    <p>
+                        Mở ứng dụng Tệp của bạn hoặc Trình quản lý tệp.
+                        Truy cập thư mục Download và tìm file APK vừa tải.
+                    </p>
+
+                    <span class="guide-label">DOWNLOAD</span>
+                </div>
+
             </div>
 
+            <!-- BƯỚC 3 -->
             <div class="guide-item">
-                <span class="guide-number">3</span>
 
-                <div>
-                    <h3>Cho phép cài đặt</h3>
-                    <p>Nếu điện thoại yêu cầu, hãy cho phép trình duyệt hoặc trình quản lý tệp cài ứng dụng từ nguồn này.</p>
+                <div class="guide-icon">
+                    <i class="fas fa-file-arrow-down"></i>
                 </div>
+
+                <div class="guide-content">
+                    <h3>Bước 3: Mở file APK</h3>
+
+                    <p>
+                        Nhấn vào file TikTok APK để bắt đầu quá trình cài đặt.
+                        Nếu điện thoại yêu cầu quyền cài đặt từ nguồn này,
+                        hãy mở phần Cài đặt theo hướng dẫn trên màn hình.
+                    </p>
+
+                    <span class="guide-label">INSTALL APK</span>
+                </div>
+
             </div>
 
+            <!-- BƯỚC 4 -->
             <div class="guide-item">
-                <span class="guide-number">4</span>
 
-                <div>
-                    <h3>Hoàn tất cài đặt</h3>
-                    <p>Nhấn Cài đặt, chờ hoàn tất và mở ứng dụng.</p>
+                <div class="guide-icon">
+                    <i class="fas fa-shield-halved"></i>
                 </div>
+
+                <div class="guide-content">
+                    <h3>Bước 4: Cho phép cài đặt</h3>
+
+                    <p>
+                        Trong phần quyền của trình duyệt hoặc ứng dụng quản lý tệp,
+                        bật mục Cho phép cài đặt ứng dụng không rõ nguồn gốc
+                        nếu bạn tin tưởng file APK này.
+                    </p>
+
+                    <span class="guide-label">ALLOW INSTALLATION</span>
+                </div>
+
+            </div>
+
+            <!-- BƯỚC 5 -->
+            <div class="guide-item">
+
+                <div class="guide-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+
+                <div class="guide-content">
+                    <h3>Bước 5: Hoàn tất cài đặt</h3>
+
+                    <p>
+                        Quay lại trình cài đặt, nhấn Cài đặt và chờ hoàn tất.
+                        Sau đó bạn có thể mở ứng dụng.
+                    </p>
+
+                    <span class="guide-label">DONE</span>
+                </div>
+
             </div>
 
         </div>
 
     </section>
 
-    <!-- LƯU Ý -->
+    <!-- ========================================
+         16. LƯU Ý
+    ======================================== -->
     <section class="notice">
 
         <h3>
             <i class="fas fa-circle-info"></i>
-            LƯU Ý
+            LƯU Ý KHI CÀI ĐẶT
         </h3>
 
         <p>
-            Android có thể yêu cầu quyền cài đặt ứng dụng từ nguồn bên ngoài.
-            Chỉ tiếp tục nếu ông tin tưởng nguồn file APK và đã kiểm tra
-            tính an toàn của tệp.
+            Chỉ cài đặt APK khi bạn tin tưởng nguồn tải và đã kiểm tra
+            tính an toàn của tệp. Nếu Android hoặc Google Play Protect
+            cảnh báo ứng dụng không an toàn, hãy dừng lại và xác minh
+            nguồn phát hành trước khi tiếp tục.
         </p>
 
     </section>
@@ -725,7 +721,7 @@ button {
 </main>
 
 <!-- ========================================
-     15. CHÂN TRANG
+     17. FOOTER
 ======================================== -->
 <footer class="footer">
 
@@ -735,13 +731,13 @@ button {
 </footer>
 
 <!-- ========================================
-     16. JAVASCRIPT
+     18. JAVASCRIPT
 ======================================== -->
 <div class="toast" id="toast"></div>
 
 <script>
 /* ========================================
-   CHỨC NĂNG THÔNG BÁO
+   THÔNG BÁO
 ======================================== */
 function showToast(message) {
     const toast = document.getElementById("toast");
@@ -757,33 +753,7 @@ function showToast(message) {
 }
 
 /* ========================================
-   CHIA SẺ WEBSITE
-======================================== */
-async function shareWebsite() {
-    const shareData = {
-        title: "Hoàng Kun Android",
-        text: "Tải TikTok Android tại Hoàng Kun!",
-        url: window.location.href
-    };
-
-    if (navigator.share) {
-        try {
-            await navigator.share(shareData);
-        } catch (error) {
-            // Người dùng đóng hộp chia sẻ
-        }
-    } else {
-        try {
-            await navigator.clipboard.writeText(window.location.href);
-            showToast("Đã sao chép liên kết website!");
-        } catch (error) {
-            showToast("Không thể sao chép liên kết!");
-        }
-    }
-}
-
-/* ========================================
-   SỰ KIỆN NÚT TẢI
+   NÚT TẢI APK
 ======================================== */
 document.getElementById("downloadBtn").addEventListener("click", function() {
     showToast("Đang mở liên kết tải TikTok APK...");
